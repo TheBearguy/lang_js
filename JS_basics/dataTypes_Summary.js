@@ -34,7 +34,30 @@ function startAttack(){
     console.log("Start the Attack");
 }
 
-console.log(typeof  startAttack);
+//console.log(typeof  startAttack);
 
 // Type of Reference data types is Object, 
 // specifically, type of a defined function is 'function-object'
+
+
+
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Call by Value Data Types are stored on => Stack
+// Call by Reference DataTypes are stored on => Heap
+
+let postOne = "McLaren"
+let postTwo = postOne // Copy of PostOne's contents is passed
+postTwo = "Pagani"
+console.log(postOne);
+console.log(postTwo);
+// Both will be different
+
+let carOne = {
+    name : "McLaren",
+    engine : "v12"
+}
+let carTwo = carOne // Memory reference of carOne is passed, thus now both carOne and carTwo point towards the same object.
+carTwo.name = "Pagani"
+console.log(carOne.name);
+console.log(carTwo.name);
