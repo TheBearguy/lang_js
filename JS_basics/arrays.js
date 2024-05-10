@@ -62,5 +62,13 @@ const emptyData = Array.from(
         name : "Gohan"
     }
 )
-console.log(emptyData);
+//console.log(emptyData);
 // to convert from object to array, it can be done key-wise, value-wise, until its not defined, empty array is returned.
+
+const heroId = Array.of("ok", "aight", "wow", "Nooo")
+console.log(heroId);
+
+const blobId = [1,2,3,4,5,6,7,8]
+//blobId.shift(1) // removes 1 and shifts all the other elments 
+blobId.unshift(9) // adds 9 at the 0th index and shifts all other elements.
+//console.log(blobId);
