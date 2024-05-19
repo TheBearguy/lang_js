@@ -11,9 +11,13 @@ listOfId.push(90)
 //console.log(listOfId);
 listOfId.pop()
 //console.log(listOfId);
-//console.log(listOfId.includes(3))
+//console.log(listOfId.includes(3)) // t or f
+
+// The filter() method of Array instances creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
 const evenId = listOfId.filter(num => num %2 == 0)
 //console.log(evenId);
+
+// The forEach() method of Array instances executes a provided function once for each array element. 
 //             listOfId.forEach(id => console.log(id))
 //filter, foreach - take functiona s input
 //The reduce method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.
@@ -22,6 +26,7 @@ const numbers = [1, 2, 3, 4, 5];
 // Sum of all numbers
 const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
 //console.log(sum); // Output: 15
+
 // .join() converts into String
 //console.log(listOfId.join());
 
