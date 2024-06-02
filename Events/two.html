@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OK Google</title>
+</head>
+<body>
+    <h1>OK Google!</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const  sayName = function () {
+        console.log("Goku");
+    } 
+
+    const changeTezt = function () {
+        document.querySelector('h1').
+        innerHTML = "Gohan"
+    }
+    
+
+    const changeMe = setTimeout(changeTezt, 3000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("Set is Stopped")
+    })
+</script>
+</html>
