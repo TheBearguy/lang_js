@@ -1,3 +1,5 @@
+// Promise is just a tool (js Object) thats used to manage async tasks
+
 const promiseOne = new Promise(function (resolve, reject) {
     // DO any Async Tasks
     // DB Calls, Cryptography, Networks
@@ -109,3 +111,34 @@ fetch('https://api.github.com/users/bugbreaker18')
 
 // // promise.all
 // The Promise.all() static method takes an iterable of promises as input and returns a single Promise. This returned promise fulfills when all of the input's promises fulfill (including when an empty iterable is passed), with an array of the fulfillment values. It rejects when any of the input's promises rejects, with this first rejection reason.
+
+
+
+// xhr in Promise: 
+
+// function fetchData(url) {
+//     return new Promise((resolve, reject) => {
+//         var xhr = new XMLHttpRequest();
+//         xhr.open('GET', url, true);
+
+//         xhr.onreadystatechange = function() {
+//             if (xhr.readyState === XMLHttpRequest.DONE) {
+//                 if (xhr.status === 200) {
+//                     resolve(xhr.responseText);
+//                 } else {
+//                     reject(new Error('Request failed with status ' + xhr.status));
+//                 }
+//             }
+//         };
+
+//         xhr.send();
+//     });
+// }
+
+// fetchData('https://api.example.com/data')
+//     .then(response => {
+//         console.log('Response:', response);
+//     })
+//     .catch(error => {
+//         console.error('Error:', error);
+//     });
